@@ -1,5 +1,5 @@
 # color-palette-app
-This is **forked** from **https://github.com/makkoncept/colorpalette**. Here I am using the Flask UI layout of the colorpalette repo and add in machine learning element. Instead of just extracting dominat color images from user's input image using kmeans, here we use colorgram.py module for extracting the 5 dominant colors from any user input images, in addition, we find colors recommendations by using 1) GAN model to predict the next 5 harmonious colors to be used together with the image's colors 2) Colors recommendations using rules from color wheel such as complimentary colors, Pair of Triadic Colors and etc.
+The UI of this app is **forked** from **https://github.com/makkoncept/colorpalette**. Here I am using the Flask UI layout of the **colorpalette** repo and add in machine learning element. Instead of just extracting dominat color images from user's input image using kmeans, here we use colorgram.py module for extracting the 5 dominant colors from any user input images, in addition, we find colors recommendations by using 1) GAN model to predict the next 5 harmonious colors to be used together with the image's colors 2) Colors recommendations using rules from color wheel such as complimentary colors, Pair of Triadic Colors and etc.
 
 ### main page
 ![main page](pic0.PNG)
