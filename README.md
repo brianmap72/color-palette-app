@@ -1,8 +1,11 @@
 # color-palette-app
 This is **forked** from **https://github.com/makkoncept/colorpalette**. Here we use colorgram.py for extracting the 5 dominant colors from any user input images, and use 1) GAN model to predict the next 5 harmonious colors to be used together with the image's colors 2) Colors recommendations using rules from color wheel such as complimentary colors, Pair of Triadic Colors and etc.
 
+### main page
 ![main page](pic0.PNG)
+### result from Machine learning (GAN)
 ![result from ML](pic1.PNG)
+### result from rules (color wheel)
 ![result from rules](pic2.PNG)
 
 ## Install:
