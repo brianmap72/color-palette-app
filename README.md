@@ -3,12 +3,13 @@
 
 ## Install:
 
-git clone https://github.com/makkoncept/colorpalette.git  
-cd colorpalette
-Create a virtualenv:
+```git clone https://github.com/brianmap72/color-palette-app.git 
+cd color-palette-app```
 
-python3 -m venv venv   
-Activate it on Linux:
+## Create a virtualenv:
+
+```python3 -m venv venv   
+Activate it on Linux:```
 
 . venv/bin/activate  
 Or on Windows cmd:
