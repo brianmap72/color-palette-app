@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Color-Palette</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div style="margin-top: 5%">
+        <p style="text-align: center;">Try <a href="{{url_for('index')}}">Again</a>?</p>
+    </div>
+      <div>
+        <img src="{{src}}" height="{{height}}" width="{{width}}" style="margin-left: auto; margin-right: auto; display: block">
+    </div>
+      <h4 style="text-align: center; padding-top: 10px"> Palette with hex codes</h4>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src2}}" align="middle" style="margin-left: auto; margin-right: auto; display: block;">
+            </tr>
+        </table>
+        </div>
+
+      <h4 style="text-align: center; padding-top: 10px"> ML Predicted harmonious Colors - Palette with hex codes</h4>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes6 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{srcml}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+
+      <h4 style="text-align: center; padding-top: 10px"> Complimentary Colors - Palette with hex codes</h4>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes1 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src3}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+
+        <h4 style="text-align: center; padding-top: 10px"> Pair of Triadic Colors - Palette with hex codes</h4>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes2 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src4a}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes3 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src4b}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+
+        <h4 style="text-align: center; padding-top: 10px"> Pair of Analogous Colors - Palette with hex codes</h4>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes4 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src5a}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+
+        <div style="padding-top: 20px">
+            <table>
+
+              <tr>
+                {% for hex in hex_codes5 %}
+                <th style=" padding: 10px 20px 20px 20px; border: none; padding-left: 70%;">
+                  {{ hex }}
+                </th>
+                {% endfor %}
+              </tr>
+            <tr>
+                <img src="{{src5b}}" style="margin-left: auto; margin-right: auto; display: block">
+            </tr>
+        </table>
+        </div>
+  </div>
+</body>
+</html>
